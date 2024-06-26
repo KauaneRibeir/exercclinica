@@ -49,11 +49,18 @@ console.log(`${index + 1}. ${consultas.paciente} - ${consultas.medico}
 }
 
 } else if (opcao === "3") {
-let nome = prompt(" Qual é o nome do paciente? ");
 consultas.forEach((consultas, index) => {
-if (nome === consultas.paciente) {
-consultas.length
-)}
+console.log(`${index + 1}. ${consultas.paciente} - ${consultas.medico} 
+- ${consultas.data} - ${consultas.hora}`
+let indice = prompt("Escolha uma consultapara atualizar");
+consultas.paciente[indice -1].paciente = prompt("novo paciente");
+consultas.medico[indice -1].medico = prompt("novo medico");
+consultas.data[indice -1].data = prompt("nova data");
+consultas.hora[indice -1].hora = prompt("novo horario");
+console.log("Consulta atualizada")
+)
+})
+break;
 
 } else if (opcao === "4") {
 consultas.forEach((consultas, index) => {
@@ -61,8 +68,9 @@ console.log(`${index + 1}. ${consultas.paciente} - ${consultas.medico}
 - ${consultas.data} - ${consultas.hora}`
 );
 });
-let opcao1 = (" Qual voce deseja cancelar? ");
-consultas.splice(opcao1)
+let indice = (" Qual voce deseja cancelar? ");
+consultas.splice(indice1)
+console.log("consulta removida")
 break;
 
 
@@ -72,4 +80,5 @@ break;
 } else {
 console.log("Opção inválida. Tente novamente.");
 break;
-}
+}}}
+
