@@ -53,7 +53,7 @@ let nome = prompt(" Qual é o nome do paciente? ");
 consultas.forEach((consultas, index) => {
 if (nome === consultas.paciente) {
 consultas.length
-})
+)}
 
 } else if (opcao === "4") {
 consultas.forEach((consultas, index) => {
@@ -61,7 +61,7 @@ console.log(`${index + 1}. ${consultas.paciente} - ${consultas.medico}
 - ${consultas.data} - ${consultas.hora}`
 );
 });
-let cancelar = (" Qual voce desja cancelar? ");
+let opcao1 = (" Qual voce deseja cancelar? ");
 consultas.splice(opcao1)
 break;
 
@@ -73,4 +73,3 @@ break;
 console.log("Opção inválida. Tente novamente.");
 break;
 }
-}}
